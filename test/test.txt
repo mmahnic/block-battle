@@ -1,0 +1,53 @@
+hello
+
+settings time_bank 10000
+settings time_per_move 500
+settings player_names player1,player2
+settings your_bot player1
+settings field_height 20
+settings field_width 10
+
+update game round 1
+update game this_piece_type O
+update game next_piece_type I
+update game this_piece_position 4,-1
+
+update player1 row_points 0
+update player1 combo 0
+update player1 field 0,0,0,0,1,1,0,0,0,0;0,0,0,0,0,0,0,0,0,0;0,0,0,0,0,0,0,0,0,0;0,0,0,0,0,0,0,0,0,0;0,0,0,0,0,0,0,0,0,0;0,0,0,0,0,0,0,0,0,0;0,0,0,0,0,0,0,0,0,0;0,0,0,0,0,0,0,0,0,0;0,0,0,0,0,0,0,0,0,0;0,0,0,0,0,0,0,0,0,0;0,0,0,0,0,0,0,0,0,0;0,0,0,0,0,0,0,0,0,0;0,0,0,0,0,0,0,0,0,0;0,0,0,0,0,0,0,0,0,0;0,0,0,0,0,0,0,0,0,0;0,0,0,0,0,0,0,0,0,0;0,0,0,0,0,0,0,0,0,0;0,0,0,0,0,0,0,0,0,0;0,0,0,0,0,0,0,0,0,0;0,0,0,0,0,0,0,0,0,0
+
+update player2 row_points 0
+update player2 combo 0
+update player2 field 0,0,0,0,1,1,0,0,0,0;0,0,0,0,0,0,0,0,0,0;0,0,0,0,0,0,0,0,0,0;0,0,0,0,0,0,0,0,0,0;0,0,0,0,0,0,0,0,0,0;0,0,0,0,0,0,0,0,0,0;0,0,0,0,0,0,0,0,0,0;0,0,0,0,0,0,0,0,0,0;0,0,0,0,0,0,0,0,0,0;0,0,0,0,0,0,0,0,0,0;0,0,0,0,0,0,0,0,0,0;0,0,0,0,0,0,0,0,0,0;0,0,0,0,0,0,0,0,0,0;0,0,0,0,0,0,0,0,0,0;0,0,0,0,0,0,0,0,0,0;0,0,0,0,0,0,0,0,0,0;0,0,0,0,0,0,0,0,0,0;0,0,0,0,0,0,0,0,0,0;0,0,0,0,0,0,0,0,0,0;0,0,0,0,0,0,0,0,0,0
+
+dump
+
+action moves 10000
+action moves 9999
+action moves 9998
+action moves 9997
+action moves 9996
+
+hello
+update game round 2
+update game this_piece_type I
+update game next_piece_type T
+update game this_piece_position 4,-1
+
+action moves 9995
+action moves 9994
+action moves 9993
+action moves 9992
+action moves 9991
+action moves 9990
+
+hello
+update game round 3
+update game this_piece_type T
+update game next_piece_type Z
+update game this_piece_position 4,-1
+
+action moves 9989
+action moves 9988
+action moves 9987
+action moves 9986

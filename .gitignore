@@ -1,0 +1,8 @@
+build/
+Build/
+BUILD/
+xdata/
+
+*.swp
+*.bak
+*.*~
