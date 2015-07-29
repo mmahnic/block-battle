@@ -41,10 +41,10 @@ DumpWrapper<T> Dump(const T& v_)
 }
 
 template<typename T>
-std::ostream& operator<<(std::ostream& os, const DumpWrapper<T>& obj)
-{
-   dump( obj.v, os );
-}
+std::ostream& operator<<(std::ostream& os, const DumpWrapper<T>& obj);
+
+template<typename T>
+void dump( const T& item, std::ostream& out );
 
 template<typename T>
 void dump( const std::vector<T>& items, std::ostream& out )
@@ -155,5 +155,12 @@ void dump( Iter ib, int32_t count, std::ostream& out )
          out << ", ";
    }
    out << "}";
+}
+
+template<typename T>
+std::ostream& operator<<(std::ostream& os, const DumpWrapper<T>& obj)
+{
+   dump( obj.v, os );
+   return os;
 }
 
